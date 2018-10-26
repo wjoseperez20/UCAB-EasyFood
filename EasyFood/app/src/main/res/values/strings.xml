@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">EasyFood</string>
+    <string name="texto_inicio">PRODUCTOS SELECCIONADOS</string>
+    <string name="categoria_string">Categcoria:</string>
+    <string name="producto_string">Producto:</string>
+    <string name="descripcion_string">Descripción:</string>
+    <string name="theme_title">Bienvenido a EasyFood</string>
+</resources>
