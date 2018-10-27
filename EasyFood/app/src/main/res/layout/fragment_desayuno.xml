@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductosActivity">
+
+    <TextView
+        android:id="@+id/texto_desayunos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/tab_desayuno"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollView_desayunos"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/texto_desayunos">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/imagen_desayuno_1"
+                android:layout_width="@dimen/image_width"
+                android:layout_height="@dimen/image_height"
+                android:layout_alignParentTop="true"
+                android:padding="@dimen/padding_regular"
+                app:srcCompat="@drawable/desayuno_1" />
+
+            <TextView
+                android:id="@+id/producto_desayuno_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/imagen_desayuno_1"
+                android:layout_toRightOf="@id/imagen_desayuno_1"
+                android:paddingTop="@dimen/padding_top_categoria"
+                android:text="@string/label_producto"
+                android:textSize="@dimen/normal_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/desayuno_americano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/producto_desayuno_1"
+                android:layout_toRightOf="@id/producto_desayuno_1"
+                android:paddingTop="@dimen/padding_top_categoria"
+                android:text="@string/desayuno_1_nombre"
+                android:textSize="@dimen/normal_text_size" />
+
+            <ImageView
+                android:id="@+id/imagen_desayuno_2"
+                android:layout_width="@dimen/image_width"
+                android:layout_height="@dimen/image_height"
+                android:layout_below="@id/imagen_desayuno_1"
+                android:padding="@dimen/padding_regular"
+                app:srcCompat="@drawable/avenafrutos" />
+
+            <TextView
+                android:id="@+id/producto_desayuno_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/imagen_desayuno_2"
+                android:layout_toRightOf="@id/imagen_desayuno_2"
+                android:layout_below="@id/imagen_desayuno_1"
+                android:paddingTop="@dimen/padding_top_categoria"
+                android:text="@string/label_producto"
+                android:textSize="@dimen/normal_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/desayuno_avena"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/producto_desayuno_2"
+                android:layout_toRightOf="@id/producto_desayuno_2"
+                android:layout_below="@id/imagen_desayuno_1"
+                android:paddingTop="@dimen/padding_top_categoria"
+                android:text="@string/desayuno_2_nombre"
+                android:textSize="@dimen/normal_text_size" />
+
+            <ImageView
+                android:id="@+id/imagen_desayuno_3"
+                android:layout_width="@dimen/image_width"
+                android:layout_height="@dimen/image_height"
+                android:layout_below="@id/imagen_desayuno_2"
+                android:padding="@dimen/padding_regular"
+                app:srcCompat="@drawable/croissant" />
+
+            <TextView
+                android:id="@+id/producto_desayuno_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imagen_desayuno_2"
+                android:layout_toEndOf="@id/imagen_desayuno_3"
+                android:layout_toRightOf="@id/imagen_desayuno_3"
+                android:paddingTop="@dimen/padding_top_categoria"
+                android:text="@string/label_producto"
+                android:textSize="@dimen/normal_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/desayuno_croissant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/producto_desayuno_3"
+                android:layout_toRightOf="@id/producto_desayuno_3"
+                android:layout_below="@id/imagen_desayuno_2"
+                android:paddingTop="@dimen/padding_top_categoria"
+                android:text="@string/desayuno_3_nombre"
+                android:textSize="@dimen/normal_text_size" />
+
+
+            <ImageView
+                android:id="@+id/imagen_desayuno_4"
+                android:layout_width="@dimen/image_width"
+                android:layout_height="@dimen/image_height"
+                android:layout_below="@id/imagen_desayuno_3"
+                android:padding="@dimen/padding_regular"
+                app:srcCompat="@drawable/croquemadame" />
+
+            <TextView
+                android:id="@+id/producto_desayuno_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imagen_desayuno_3"
+                android:layout_toEndOf="@id/imagen_desayuno_4"
+                android:layout_toRightOf="@id/imagen_desayuno_4"
+                android:paddingTop="@dimen/padding_top_categoria"
+                android:text="@string/label_producto"
+                android:textSize="@dimen/normal_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/desayuno_croque"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/producto_desayuno_4"
+                android:layout_toRightOf="@id/producto_desayuno_4"
+                android:layout_below="@id/imagen_desayuno_3"
+                android:paddingTop="@dimen/padding_top_categoria"
+                android:text="@string/desayuno_4_nombre"
+                android:textSize="@dimen/normal_text_size" />
+
+            <ImageView
+                android:id="@+id/imagen_desayuno_5"
+                android:layout_width="@dimen/image_width"
+                android:layout_height="@dimen/image_height"
+                android:layout_below="@id/imagen_desayuno_4"
+                android:padding="@dimen/padding_regular"
+                app:srcCompat="@drawable/croque_madame_camote" />
+
+            <TextView
+                android:id="@+id/producto_desayuno_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imagen_desayuno_4"
+                android:layout_toEndOf="@id/imagen_desayuno_5"
+                android:layout_toRightOf="@id/imagen_desayuno_5"
+                android:paddingTop="@dimen/padding_top_categoria"
+                android:text="@string/label_producto"
+                android:textSize="@dimen/normal_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/desayuno_croque_camote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/producto_desayuno_5"
+                android:layout_toRightOf="@id/producto_desayuno_5"
+                android:layout_below="@id/imagen_desayuno_4"
+                android:paddingTop="@dimen/padding_top_categoria"
+                android:text="@string/desayuno_5_nombre"
+                android:textSize="@dimen/normal_text_size" />
+
+            <ImageView
+                android:id="@+id/imagen_desayuno_6"
+                android:layout_width="@dimen/image_width"
+                android:layout_height="@dimen/image_height"
+                android:layout_below="@id/imagen_desayuno_5"
+                android:padding="@dimen/padding_regular"
+                app:srcCompat="@drawable/huevos_benedictinos" />
+
+            <TextView
+                android:id="@+id/producto_desayuno_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imagen_desayuno_5"
+                android:layout_toEndOf="@id/imagen_desayuno_6"
+                android:layout_toRightOf="@id/imagen_desayuno_6"
+                android:paddingTop="@dimen/padding_top_categoria"
+                android:text="@string/label_producto"
+                android:textSize="@dimen/normal_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/desayuno_huevos_benedictinos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/producto_desayuno_6"
+                android:layout_toRightOf="@id/producto_desayuno_6"
+                android:layout_below="@id/imagen_desayuno_5"
+                android:paddingTop="@dimen/padding_top_categoria"
+                android:text="@string/desayuno_6_nombre"
+                android:textSize="@dimen/normal_text_size" />
+
+            <ImageView
+                android:id="@+id/imagen_desayuno_7"
+                android:layout_width="@dimen/image_width"
+                android:layout_height="@dimen/image_height"
+                android:layout_below="@id/imagen_desayuno_6"
+                android:padding="@dimen/padding_regular"
+                app:srcCompat="@drawable/huevos_en_cazuela" />
+
+            <TextView
+                android:id="@+id/producto_desayuno_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imagen_desayuno_6"
+                android:layout_toEndOf="@id/imagen_desayuno_7"
+                android:layout_toRightOf="@id/imagen_desayuno_7"
+                android:paddingTop="@dimen/padding_top_categoria"
+                android:text="@string/label_producto"
+                android:textSize="@dimen/normal_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/desayuno_huevos_cazuela"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/producto_desayuno_7"
+                android:layout_toRightOf="@id/producto_desayuno_7"
+                android:layout_below="@id/imagen_desayuno_6"
+                android:paddingTop="@dimen/padding_top_categoria"
+                android:text="@string/desayuno_7_nombre"
+                android:textSize="@dimen/normal_text_size" />
+
+            <ImageView
+                android:id="@+id/imagen_desayuno_8"
+                android:layout_width="@dimen/image_width"
+                android:layout_height="@dimen/image_height"
+                android:layout_below="@id/imagen_desayuno_7"
+                android:padding="@dimen/padding_regular"
+                app:srcCompat="@drawable/matcha_con_arandano" />
+
+            <TextView
+                android:id="@+id/producto_desayuno_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imagen_desayuno_7"
+                android:layout_toEndOf="@id/imagen_desayuno_8"
+                android:layout_toRightOf="@id/imagen_desayuno_8"
+                android:paddingTop="@dimen/padding_top_categoria"
+                android:text="@string/label_producto"
+                android:textSize="@dimen/normal_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/desayuno_matcha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/producto_desayuno_8"
+                android:layout_toRightOf="@id/producto_desayuno_8"
+                android:layout_below="@id/imagen_desayuno_7"
+                android:paddingTop="@dimen/padding_top_categoria"
+                android:text="@string/desayuno_8_nombre"
+                android:textSize="@dimen/normal_text_size" />
+
+            <ImageView
+                android:id="@+id/imagen_desayuno_9"
+                android:layout_width="@dimen/image_width"
+                android:layout_height="@dimen/image_height"
+                android:layout_below="@id/imagen_desayuno_8"
+                android:padding="@dimen/padding_regular"
+                app:srcCompat="@drawable/pan_frances_manzana" />
+
+            <TextView
+                android:id="@+id/producto_desayuno_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imagen_desayuno_8"
+                android:layout_toEndOf="@id/imagen_desayuno_9"
+                android:layout_toRightOf="@id/imagen_desayuno_9"
+                android:paddingTop="@dimen/padding_top_categoria"
+                android:text="@string/label_producto"
+                android:textSize="@dimen/normal_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/desayuno_pan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/producto_desayuno_9"
+                android:layout_toRightOf="@id/producto_desayuno_9"
+                android:layout_below="@id/imagen_desayuno_8"
+                android:paddingTop="@dimen/padding_top_categoria"
+                android:text="@string/desayuno_9_nombre"
+                android:textSize="@dimen/normal_text_size" />
+
+            <ImageView
+                android:id="@+id/imagen_desayuno_10"
+                android:layout_width="@dimen/image_width"
+                android:layout_height="@dimen/image_height"
+                android:layout_below="@id/imagen_desayuno_9"
+                android:padding="@dimen/padding_regular"
+                app:srcCompat="@drawable/wafles_manzana" />
+
+            <TextView
+                android:id="@+id/producto_desayuno_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imagen_desayuno_9"
+                android:layout_toEndOf="@id/imagen_desayuno_10"
+                android:layout_toRightOf="@id/imagen_desayuno_10"
+                android:paddingTop="@dimen/padding_top_categoria"
+                android:text="@string/label_producto"
+                android:textSize="@dimen/normal_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/desayuno_wafles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/producto_desayuno_10"
+                android:layout_toRightOf="@id/producto_desayuno_10"
+                android:layout_below="@id/imagen_desayuno_9"
+                android:paddingTop="@dimen/padding_top_categoria"
+                android:text="@string/desayuno_10_nombre"
+                android:textSize="@dimen/normal_text_size" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
