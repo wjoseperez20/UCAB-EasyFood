@@ -33,7 +33,8 @@
                 android:layout_width="@dimen/image_width"
                 android:layout_height="@dimen/image_height"
                 android:layout_alignParentTop="true"
-                android:padding="@dimen/padding_regular" />
+                android:padding="@dimen/padding_regular"
+                android:onClick="AgregarPostre"/>
 
             <TextView
                 android:id="@+id/producto_postre_1"
@@ -62,7 +63,8 @@
                 android:layout_width="@dimen/image_width"
                 android:layout_height="@dimen/image_height"
                 android:layout_below="@id/imagen_postre_1"
-                android:padding="@dimen/padding_regular" />
+                android:padding="@dimen/padding_regular"
+                android:onClick="AgregarPostre"/>
 
             <TextView
                 android:id="@+id/producto_postre_2"
@@ -93,7 +95,8 @@
                 android:layout_width="@dimen/image_width"
                 android:layout_height="@dimen/image_height"
                 android:layout_below="@id/imagen_postre_2"
-                android:padding="@dimen/padding_regular" />
+                android:padding="@dimen/padding_regular"
+                android:onClick="AgregarPostre"/>
 
             <TextView
                 android:id="@+id/producto_postre_3"
@@ -125,7 +128,8 @@
                 android:layout_width="@dimen/image_width"
                 android:layout_height="@dimen/image_height"
                 android:layout_below="@id/imagen_postre_3"
-                android:padding="@dimen/padding_regular" />
+                android:padding="@dimen/padding_regular"
+                android:onClick="AgregarPostre"/>
 
             <TextView
                 android:id="@+id/producto_postre_4"
@@ -156,7 +160,8 @@
                 android:layout_width="@dimen/image_width"
                 android:layout_height="@dimen/image_height"
                 android:layout_below="@id/imagen_postre_4"
-                android:padding="@dimen/padding_regular" />
+                android:padding="@dimen/padding_regular"
+                android:onClick="AgregarPostre"/>
 
             <TextView
                 android:id="@+id/producto_postre_5"
@@ -187,7 +192,8 @@
                 android:layout_width="@dimen/image_width"
                 android:layout_height="@dimen/image_height"
                 android:layout_below="@id/imagen_postre_5"
-                android:padding="@dimen/padding_regular" />
+                android:padding="@dimen/padding_regular"
+                android:onClick="AgregarPostre"/>
 
             <TextView
                 android:id="@+id/producto_postre_6"
@@ -218,7 +224,8 @@
                 android:layout_width="@dimen/image_width"
                 android:layout_height="@dimen/image_height"
                 android:layout_below="@id/imagen_postre_6"
-                android:padding="@dimen/padding_regular" />
+                android:padding="@dimen/padding_regular"
+                android:onClick="AgregarPostre" />
 
             <TextView
                 android:id="@+id/producto_postre_7"
@@ -249,7 +256,8 @@
                 android:layout_width="@dimen/image_width"
                 android:layout_height="@dimen/image_height"
                 android:layout_below="@id/imagen_postre_7"
-                android:padding="@dimen/padding_regular" />
+                android:padding="@dimen/padding_regular"
+                android:onClick="AgregarPostre" />
 
             <TextView
                 android:id="@+id/producto_postre_8"
@@ -280,7 +288,8 @@
                 android:layout_width="@dimen/image_width"
                 android:layout_height="@dimen/image_height"
                 android:layout_below="@id/imagen_postre_8"
-                android:padding="@dimen/padding_regular" />
+                android:padding="@dimen/padding_regular"
+                android:onClick="AgregarPostre" />
 
             <TextView
                 android:id="@+id/producto_postre_9"
@@ -311,7 +320,8 @@
                 android:layout_width="@dimen/image_width"
                 android:layout_height="@dimen/image_height"
                 android:layout_below="@id/imagen_postre_9"
-                android:padding="@dimen/padding_regular" />
+                android:padding="@dimen/padding_regular"
+                android:onClick="AgregarPostre" />
 
             <TextView
                 android:id="@+id/producto_postre_10"
