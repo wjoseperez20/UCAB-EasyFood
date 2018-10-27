@@ -32,7 +32,8 @@
                 android:layout_height="@dimen/image_height"
                 android:layout_alignParentTop="true"
                 android:padding="@dimen/padding_regular"
-                app:srcCompat="@drawable/desayuno_1" />
+                app:srcCompat="@drawable/desayuno_1"
+                android:onClick="AgregarDesayuno"/>
 
             <TextView
                 android:id="@+id/producto_desayuno_1"
@@ -61,7 +62,8 @@
                 android:layout_height="@dimen/image_height"
                 android:layout_below="@id/imagen_desayuno_1"
                 android:padding="@dimen/padding_regular"
-                app:srcCompat="@drawable/avenafrutos" />
+                app:srcCompat="@drawable/avenafrutos"
+                android:onClick="AgregarDesayuno"/>
 
             <TextView
                 android:id="@+id/producto_desayuno_2"
@@ -92,7 +94,8 @@
                 android:layout_height="@dimen/image_height"
                 android:layout_below="@id/imagen_desayuno_2"
                 android:padding="@dimen/padding_regular"
-                app:srcCompat="@drawable/croissant" />
+                app:srcCompat="@drawable/croissant"
+                android:onClick="AgregarDesayuno"/>
 
             <TextView
                 android:id="@+id/producto_desayuno_3"
@@ -124,7 +127,8 @@
                 android:layout_height="@dimen/image_height"
                 android:layout_below="@id/imagen_desayuno_3"
                 android:padding="@dimen/padding_regular"
-                app:srcCompat="@drawable/croquemadame" />
+                app:srcCompat="@drawable/croquemadame"
+                android:onClick="AgregarDesayuno"/>
 
             <TextView
                 android:id="@+id/producto_desayuno_4"
@@ -155,7 +159,8 @@
                 android:layout_height="@dimen/image_height"
                 android:layout_below="@id/imagen_desayuno_4"
                 android:padding="@dimen/padding_regular"
-                app:srcCompat="@drawable/croque_madame_camote" />
+                app:srcCompat="@drawable/croque_madame_camote"
+                android:onClick="AgregarDesayuno"/>
 
             <TextView
                 android:id="@+id/producto_desayuno_5"
@@ -186,7 +191,8 @@
                 android:layout_height="@dimen/image_height"
                 android:layout_below="@id/imagen_desayuno_5"
                 android:padding="@dimen/padding_regular"
-                app:srcCompat="@drawable/huevos_benedictinos" />
+                app:srcCompat="@drawable/huevos_benedictinos"
+                android:onClick="AgregarDesayuno" />
 
             <TextView
                 android:id="@+id/producto_desayuno_6"
@@ -217,7 +223,8 @@
                 android:layout_height="@dimen/image_height"
                 android:layout_below="@id/imagen_desayuno_6"
                 android:padding="@dimen/padding_regular"
-                app:srcCompat="@drawable/huevos_en_cazuela" />
+                app:srcCompat="@drawable/huevos_en_cazuela"
+                android:onClick="AgregarDesayuno" />
 
             <TextView
                 android:id="@+id/producto_desayuno_7"
@@ -248,7 +255,8 @@
                 android:layout_height="@dimen/image_height"
                 android:layout_below="@id/imagen_desayuno_7"
                 android:padding="@dimen/padding_regular"
-                app:srcCompat="@drawable/matcha_con_arandano" />
+                app:srcCompat="@drawable/matcha_con_arandano"
+                android:onClick="AgregarDesayuno" />
 
             <TextView
                 android:id="@+id/producto_desayuno_8"
@@ -279,7 +287,8 @@
                 android:layout_height="@dimen/image_height"
                 android:layout_below="@id/imagen_desayuno_8"
                 android:padding="@dimen/padding_regular"
-                app:srcCompat="@drawable/pan_frances_manzana" />
+                app:srcCompat="@drawable/pan_frances_manzana"
+                android:onClick="AgregarDesayuno" />
 
             <TextView
                 android:id="@+id/producto_desayuno_9"
@@ -310,7 +319,8 @@
                 android:layout_height="@dimen/image_height"
                 android:layout_below="@id/imagen_desayuno_9"
                 android:padding="@dimen/padding_regular"
-                app:srcCompat="@drawable/wafles_manzana" />
+                app:srcCompat="@drawable/wafles_manzana"
+                android:onClick="AgregarDesayuno" />
 
             <TextView
                 android:id="@+id/producto_desayuno_10"

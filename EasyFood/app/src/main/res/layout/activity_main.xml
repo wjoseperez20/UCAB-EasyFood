@@ -55,7 +55,7 @@
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/imagen_producto_1"
                 android:layout_toEndOf="@id/imagen_producto_1"
-                android:text="@string/label_producto"
+                android:text="@string/producto_seleccione"
                 android:paddingTop="@dimen/padding_top_categoria"
                 android:textSize="@dimen/normal_text_size" />
 
@@ -74,7 +74,7 @@
                 android:layout_toRightOf="@id/imagen_producto_2"
                 android:layout_toEndOf="@id/imagen_producto_2"
                 android:layout_below="@id/imagen_producto_1"
-                android:text="@string/label_producto"
+                android:text="@string/producto_seleccione"
                 android:paddingTop="@dimen/padding_top_categoria"
                 android:textSize="@dimen/normal_text_size" />
 
@@ -93,7 +93,7 @@
                 android:layout_toRightOf="@id/imagen_producto_3"
                 android:layout_toEndOf="@id/imagen_producto_3"
                 android:layout_below="@id/imagen_producto_2"
-                android:text="@string/label_producto"
+                android:text="@string/producto_seleccione"
                 android:paddingTop="@dimen/padding_top_categoria"
                 android:textSize="@dimen/normal_text_size" />
 
@@ -112,7 +112,7 @@
                 android:layout_toRightOf="@id/imagen_producto_4"
                 android:layout_toEndOf="@id/imagen_producto_4"
                 android:layout_below="@id/imagen_producto_3"
-                android:text="@string/label_producto"
+                android:text="@string/producto_seleccione"
                 android:paddingTop="@dimen/padding_top_categoria"
                 android:textSize="@dimen/normal_text_size" />
 
@@ -131,7 +131,7 @@
                 android:layout_toRightOf="@id/imagen_producto_5"
                 android:layout_toEndOf="@id/imagen_producto_5"
                 android:layout_below="@id/imagen_producto_4"
-                android:text="@string/label_producto"
+                android:text="@string/producto_seleccione"
                 android:paddingTop="@dimen/padding_top_categoria"
                 android:textSize="@dimen/normal_text_size" />
 
@@ -150,7 +150,7 @@
                 android:layout_toRightOf="@id/imagen_producto_6"
                 android:layout_toEndOf="@id/imagen_producto_6"
                 android:layout_below="@id/imagen_producto_5"
-                android:text="@string/label_producto"
+                android:text="@string/producto_seleccione"
                 android:paddingTop="@dimen/padding_top_categoria"
                 android:textSize="@dimen/normal_text_size" />
 
@@ -169,7 +169,7 @@
                 android:layout_toRightOf="@id/imagen_producto_7"
                 android:layout_toEndOf="@id/imagen_producto_7"
                 android:layout_below="@id/imagen_producto_6"
-                android:text="@string/label_producto"
+                android:text="@string/producto_seleccione"
                 android:paddingTop="@dimen/padding_top_categoria"
                 android:textSize="@dimen/normal_text_size" />
 
@@ -188,7 +188,7 @@
                 android:layout_toRightOf="@id/imagen_producto_8"
                 android:layout_toEndOf="@id/imagen_producto_8"
                 android:layout_below="@id/imagen_producto_7"
-                android:text="@string/label_producto"
+                android:text="@string/producto_seleccione"
                 android:paddingTop="@dimen/padding_top_categoria"
                 android:textSize="@dimen/normal_text_size" />
 
@@ -207,7 +207,7 @@
                 android:layout_toRightOf="@id/imagen_producto_9"
                 android:layout_toEndOf="@id/imagen_producto_9"
                 android:layout_below="@id/imagen_producto_8"
-                android:text="@string/label_producto"
+                android:text="@string/producto_seleccione"
                 android:paddingTop="@dimen/padding_top_categoria"
                 android:textSize="@dimen/normal_text_size" />
 
@@ -226,7 +226,7 @@
                 android:layout_toRightOf="@id/imagen_producto_10"
                 android:layout_toEndOf="@id/imagen_producto_10"
                 android:layout_below="@id/imagen_producto_9"
-                android:text="@string/label_producto"
+                android:text="@string/producto_seleccione"
                 android:paddingTop="@dimen/padding_top_categoria"
                 android:textSize="@dimen/normal_text_size" />
 

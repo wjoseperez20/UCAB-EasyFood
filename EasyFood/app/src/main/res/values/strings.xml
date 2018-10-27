@@ -41,5 +41,6 @@
     <string name="almuerzo_8_nombre">Nusr-y Hamburguesa</string>
     <string name="almuerzo_9_nombre">Pescado del Dia</string>
     <string name="almuerzo_10_nombre">Tomahawk</string>
+    <string name="producto_seleccione">Seleccione un producto</string>
 
 </resources>
