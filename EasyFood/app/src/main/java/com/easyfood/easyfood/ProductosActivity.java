@@ -17,9 +17,5 @@ public class ProductosActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_productos);
 
-        _easyFood = EasyFoodApp.getEasyFood();
-
-        _easyFood.CrearAlmuerzo("Huevo Frito", R.drawable.desayuno_1);
-
     }
 }
