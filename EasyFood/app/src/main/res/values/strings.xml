@@ -31,4 +31,15 @@
     <string name="postre_8_nombre">Torta de Hojaldre</string>
     <string name="postre_9_nombre">Torta de Zanahoria</string>
     <string name="postre_10_nombre">Turca</string>
+    <string name="almuerzo_1_nombre">Carne a la Parrilla</string>
+    <string name="almuerzo_2_nombre">Carne Tierna y Alino Apunto</string>
+    <string name="almuerzo_3_nombre">Carpachio de Carne</string>
+    <string name="almuerzo_4_nombre">Ceviche Peruano</string>
+    <string name="almuerzo_5_nombre">Chuleton Ahumado Casero</string>
+    <string name="almuerzo_6_nombre">Faisan a la Walkirya</string>
+    <string name="almuerzo_7_nombre">Gambas Tigre a la Parrilla</string>
+    <string name="almuerzo_8_nombre">Nusr-y Hamburguesa</string>
+    <string name="almuerzo_9_nombre">Pescado del Dia</string>
+    <string name="almuerzo_10_nombre">Tomahawk</string>
+
 </resources>

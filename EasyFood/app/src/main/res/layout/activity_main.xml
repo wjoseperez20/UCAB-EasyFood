@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
+
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar2"
         android:layout_width="match_parent"
@@ -16,6 +17,7 @@
         android:minHeight="?attr/actionBarSize"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
     <TextView
         android:id="@+id/textoInicio"
         android:layout_width="match_parent"
@@ -45,7 +47,8 @@
                 android:layout_alignParentTop="true"
                 android:padding="@dimen/padding_regular"
                 app:srcCompat="@drawable/ic_photo_empty"
-                android:longClickable="true"/>
+                android:longClickable="true" />
+
             <TextView
                 android:id="@+id/nombre_1"
                 android:layout_width="wrap_content"
@@ -238,6 +241,6 @@
         android:text="AGREGAR PRODUCTO"
         android:background="@color/colorButton"
         android:textColor="@color/colorWhite"
-        android:onClick="AgregarProducto"/>
+        android:onClick="AgregarProducto" />
 
 </RelativeLayout>

@@ -1,14 +1,10 @@
 package com.easyfood.easyfood;
 
-import android.content.Intent;
+import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
-import android.widget.Button;
-import android.widget.TableLayout;
 
 import com.easyfood.easyfood.Aplicacion.EasyFoodApp;
 import com.easyfood.easyfood.Aplicacion.PagerAdapter;
@@ -32,12 +28,12 @@ public class ProductosActivity extends AppCompatActivity {
         _easyFood = EasyFoodApp.getEasyFood();
     }
 
-    private void InitToolBar(){
+    private void InitToolBar() {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
     }
 
-    private void InitTabLayout(){
+    private void InitTabLayout() {
         tabLayout = findViewById(R.id.tab_layout);
         tabLayout.addTab(tabLayout.newTab().setText(R.string.tab_label1));
         tabLayout.addTab(tabLayout.newTab().setText(R.string.tab_label2));
@@ -46,7 +42,7 @@ public class ProductosActivity extends AppCompatActivity {
 
     }
 
-    private void InitPageAdapter(){
+    private void InitPageAdapter() {
         final ViewPager viewPager = findViewById(R.id.pager);
         final PagerAdapter adapter = new PagerAdapter(getSupportFragmentManager(), tabLayout.getTabCount());
         viewPager.setAdapter(adapter);
