@@ -4,5 +4,6 @@
     <string name="categoria_string">Categcoria:</string>
     <string name="producto_string">Producto:</string>
     <string name="descripcion_string">Descripción:</string>
-    <string name="theme_title">Bienvenido a EasyFood</string>
+    <string name="theme_title">EasyFood</string>
+    <string name="productos_title">Productos Disponibles</string>
 </resources>
