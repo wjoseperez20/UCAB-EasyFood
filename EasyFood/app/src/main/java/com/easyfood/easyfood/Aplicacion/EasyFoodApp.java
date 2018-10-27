@@ -8,11 +8,11 @@ public class EasyFoodApp extends Application {
 
     private static EasyFood _easyFood;
 
-    public EasyFoodApp(){
+    public EasyFoodApp() {
         _easyFood = new EasyFood();
     }
 
-    public static EasyFood getEasyFood(){
-        return  _easyFood;
+    public static EasyFood getEasyFood() {
+        return _easyFood;
     }
 }
