@@ -1,9 +1,6 @@
 <resources>
     <string name="app_name">EasyFood</string>
     <string name="texto_inicio">PRODUCTOS SELECCIONADOS</string>
-    <string name="categoria_string">Categcoria:</string>
-    <string name="producto_string">Producto:</string>
-    <string name="descripcion_string">Descripción:</string>
     <string name="theme_title">EasyFood</string>
     <string name="productos_title">Productos Disponibles</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -13,4 +10,15 @@
     <string name="tab_label1">Desayunos</string>
     <string name="tab_label2">Almuerzos</string>
     <string name="tab_label3">Postres</string>
+    <string name="label_producto">Producto:&#032;</string>
+    <string name="desayuno_1_nombre">Huevos Americanos</string>
+    <string name="desayuno_2_nombre">Avena con Frutos Rojos</string>
+    <string name="desayuno_3_nombre">Croissant Francés</string>
+    <string name="desayuno_4_nombre">Croque Madame</string>
+    <string name="desayuno_5_nombre">Croque Madame Con Camote</string>
+    <string name="desayuno_6_nombre">Huevos Benedictinos</string>
+    <string name="desayuno_7_nombre">Huevos En Cazuela</string>
+    <string name="desayuno_8_nombre">Matcha Con Arándano</string>
+    <string name="desayuno_9_nombre">Pan Francés</string>
+    <string name="desayuno_10_nombre">Wafles con Manzana</string>
 </resources>
