@@ -3,6 +3,7 @@ package com.easyfood.easyfood;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -18,6 +19,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Toolbar toolbar = findViewById(R.id.toolbar2);
+        setSupportActionBar(toolbar);
 
         _easyFood = EasyFoodApp.getEasyFood();
 
@@ -44,6 +48,23 @@ public class MainActivity extends AppCompatActivity {
 
     public void AgregarProducto(View view){
         Intent intent = new Intent(this, ProductosActivity.class);
-        startActivity(intent);
+        startActivityForResult(intent, 1);
+    }
+
+
+    public void onActivityResult(int requestCode, int resultCode, Intent data){
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if(requestCode == 1){
+
+            if (resultCode == RESULT_OK){
+                if(_easyFood.GetListaProductos().size() > 0)
+                    Toast.makeText(getApplicationContext(), "Producto Seleccionado: "+_easyFood.GetListaProductos().get(0).GetNombre(), Toast.LENGTH_SHORT).show();
+                else
+                    Toast.makeText(getApplicationContext(), "No se selecciono un producto", Toast.LENGTH_SHORT).show();
+            }
+
+        }
+
     }
 }

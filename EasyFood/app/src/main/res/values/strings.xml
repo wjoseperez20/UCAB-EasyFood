@@ -6,4 +6,11 @@
     <string name="descripcion_string">Descripción:</string>
     <string name="theme_title">EasyFood</string>
     <string name="productos_title">Productos Disponibles</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tab_desayuno">Lista de Desayunos</string>
+    <string name="tab_almuerzo">Lista de Almuerzos</string>
+    <string name="tab_postre">Lista de Postres</string>
+    <string name="tab_label1">Desayunos</string>
+    <string name="tab_label2">Almuerzos</string>
+    <string name="tab_label3">Postres</string>
 </resources>
