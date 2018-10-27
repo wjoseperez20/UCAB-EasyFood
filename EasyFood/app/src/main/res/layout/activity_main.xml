@@ -38,13 +38,31 @@
                 app:srcCompat="@drawable/ic_photo_empty"
                 android:longClickable="true"/>
             <TextView
+                android:id="@+id/categoria_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/imagen_producto_1"
+                android:layout_toEndOf="@id/imagen_producto_1"
+                android:text="@string/categoria_string"
+                android:paddingTop="@dimen/padding_top_categoria"
+                android:textSize="@dimen/normal_text_size" />
+            <TextView
                 android:id="@+id/nombre_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/imagen_producto_1"
                 android:layout_toEndOf="@id/imagen_producto_1"
+                android:layout_below="@id/categoria_1"
                 android:text="@string/producto_string"
-                android:paddingTop="@dimen/padding_top_categoria"
+                android:textSize="@dimen/normal_text_size" />
+            <TextView
+                android:id="@+id/descripcion_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/imagen_producto_1"
+                android:layout_toEndOf="@id/imagen_producto_1"
+                android:layout_below="@id/nombre_1"
+                android:text="@string/descripcion_string"
                 android:textSize="@dimen/normal_text_size" />
 
             <ImageView
@@ -56,14 +74,32 @@
                 app:srcCompat="@drawable/ic_photo_empty" />
 
             <TextView
-                android:id="@+id/nombre_2"
+                android:id="@+id/categoria_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/imagen_producto_2"
                 android:layout_toEndOf="@id/imagen_producto_2"
                 android:layout_below="@id/imagen_producto_1"
-                android:text="@string/producto_string"
+                android:text="@string/categoria_string"
                 android:paddingTop="@dimen/padding_top_categoria"
+                android:textSize="@dimen/normal_text_size" />
+            <TextView
+                android:id="@+id/nombre_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/imagen_producto_2"
+                android:layout_toEndOf="@id/imagen_producto_2"
+                android:layout_below="@id/categoria_2"
+                android:text="@string/producto_string"
+                android:textSize="@dimen/normal_text_size" />
+            <TextView
+                android:id="@+id/descripcion_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/imagen_producto_2"
+                android:layout_toEndOf="@id/imagen_producto_2"
+                android:layout_below="@id/nombre_2"
+                android:text="@string/descripcion_string"
                 android:textSize="@dimen/normal_text_size" />
 
             <ImageView
@@ -75,14 +111,32 @@
                 app:srcCompat="@drawable/ic_photo_empty" />
 
             <TextView
-                android:id="@+id/nombre_3"
+                android:id="@+id/categoria_3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/imagen_producto_3"
                 android:layout_toEndOf="@id/imagen_producto_3"
                 android:layout_below="@id/imagen_producto_2"
-                android:text="@string/producto_string"
+                android:text="@string/categoria_string"
                 android:paddingTop="@dimen/padding_top_categoria"
+                android:textSize="@dimen/normal_text_size" />
+            <TextView
+                android:id="@+id/nombre_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/imagen_producto_3"
+                android:layout_toEndOf="@id/imagen_producto_3"
+                android:layout_below="@id/categoria_3"
+                android:text="@string/producto_string"
+                android:textSize="@dimen/normal_text_size" />
+            <TextView
+                android:id="@+id/descripcion_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/imagen_producto_3"
+                android:layout_toEndOf="@id/imagen_producto_3"
+                android:layout_below="@id/nombre_3"
+                android:text="@string/descripcion_string"
                 android:textSize="@dimen/normal_text_size" />
 
             <ImageView
@@ -94,14 +148,32 @@
                 app:srcCompat="@drawable/ic_photo_empty" />
 
             <TextView
-                android:id="@+id/nombre_4"
+                android:id="@+id/categoria_4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/imagen_producto_4"
                 android:layout_toEndOf="@id/imagen_producto_4"
                 android:layout_below="@id/imagen_producto_3"
-                android:text="@string/producto_string"
+                android:text="@string/categoria_string"
                 android:paddingTop="@dimen/padding_top_categoria"
+                android:textSize="@dimen/normal_text_size" />
+            <TextView
+                android:id="@+id/nombre_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/imagen_producto_4"
+                android:layout_toEndOf="@id/imagen_producto_4"
+                android:layout_below="@id/categoria_4"
+                android:text="@string/producto_string"
+                android:textSize="@dimen/normal_text_size" />
+            <TextView
+                android:id="@+id/descripcion_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/imagen_producto_4"
+                android:layout_toEndOf="@id/imagen_producto_4"
+                android:layout_below="@id/nombre_4"
+                android:text="@string/descripcion_string"
                 android:textSize="@dimen/normal_text_size" />
 
             <ImageView
@@ -113,14 +185,32 @@
                 app:srcCompat="@drawable/ic_photo_empty" />
 
             <TextView
-                android:id="@+id/nombre_5"
+                android:id="@+id/categoria_5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/imagen_producto_5"
                 android:layout_toEndOf="@id/imagen_producto_5"
                 android:layout_below="@id/imagen_producto_4"
-                android:text="@string/producto_string"
+                android:text="@string/categoria_string"
                 android:paddingTop="@dimen/padding_top_categoria"
+                android:textSize="@dimen/normal_text_size" />
+            <TextView
+                android:id="@+id/nombre_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/imagen_producto_5"
+                android:layout_toEndOf="@id/imagen_producto_5"
+                android:layout_below="@id/categoria_5"
+                android:text="@string/producto_string"
+                android:textSize="@dimen/normal_text_size" />
+            <TextView
+                android:id="@+id/descripcion_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/imagen_producto_5"
+                android:layout_toEndOf="@id/imagen_producto_5"
+                android:layout_below="@id/nombre_5"
+                android:text="@string/descripcion_string"
                 android:textSize="@dimen/normal_text_size" />
 
             <ImageView
@@ -132,14 +222,32 @@
                 app:srcCompat="@drawable/ic_photo_empty" />
 
             <TextView
-                android:id="@+id/nombre_6"
+                android:id="@+id/categoria_6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/imagen_producto_6"
                 android:layout_toEndOf="@id/imagen_producto_6"
                 android:layout_below="@id/imagen_producto_5"
-                android:text="@string/producto_string"
+                android:text="@string/categoria_string"
                 android:paddingTop="@dimen/padding_top_categoria"
+                android:textSize="@dimen/normal_text_size" />
+            <TextView
+                android:id="@+id/nombre_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/imagen_producto_6"
+                android:layout_toEndOf="@id/imagen_producto_6"
+                android:layout_below="@id/categoria_6"
+                android:text="@string/producto_string"
+                android:textSize="@dimen/normal_text_size" />
+            <TextView
+                android:id="@+id/descripcion_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/imagen_producto_6"
+                android:layout_toEndOf="@id/imagen_producto_6"
+                android:layout_below="@id/nombre_6"
+                android:text="@string/descripcion_string"
                 android:textSize="@dimen/normal_text_size" />
 
             <ImageView
@@ -151,14 +259,32 @@
                 app:srcCompat="@drawable/ic_photo_empty" />
 
             <TextView
-                android:id="@+id/nombre_7"
+                android:id="@+id/categoria_7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/imagen_producto_7"
                 android:layout_toEndOf="@id/imagen_producto_7"
                 android:layout_below="@id/imagen_producto_6"
-                android:text="@string/producto_string"
+                android:text="@string/categoria_string"
                 android:paddingTop="@dimen/padding_top_categoria"
+                android:textSize="@dimen/normal_text_size" />
+            <TextView
+                android:id="@+id/nombre_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/imagen_producto_7"
+                android:layout_toEndOf="@id/imagen_producto_7"
+                android:layout_below="@id/categoria_7"
+                android:text="@string/producto_string"
+                android:textSize="@dimen/normal_text_size" />
+            <TextView
+                android:id="@+id/descripcion_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/imagen_producto_7"
+                android:layout_toEndOf="@id/imagen_producto_7"
+                android:layout_below="@id/nombre_7"
+                android:text="@string/descripcion_string"
                 android:textSize="@dimen/normal_text_size" />
 
             <ImageView
@@ -170,14 +296,32 @@
                 app:srcCompat="@drawable/ic_photo_empty" />
 
             <TextView
-                android:id="@+id/nombre_8"
+                android:id="@+id/categoria_8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/imagen_producto_8"
                 android:layout_toEndOf="@id/imagen_producto_8"
                 android:layout_below="@id/imagen_producto_7"
-                android:text="@string/producto_string"
+                android:text="@string/categoria_string"
                 android:paddingTop="@dimen/padding_top_categoria"
+                android:textSize="@dimen/normal_text_size" />
+            <TextView
+                android:id="@+id/nombre_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/imagen_producto_8"
+                android:layout_toEndOf="@id/imagen_producto_8"
+                android:layout_below="@id/categoria_8"
+                android:text="@string/producto_string"
+                android:textSize="@dimen/normal_text_size" />
+            <TextView
+                android:id="@+id/descripcion_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/imagen_producto_8"
+                android:layout_toEndOf="@id/imagen_producto_8"
+                android:layout_below="@id/nombre_8"
+                android:text="@string/descripcion_string"
                 android:textSize="@dimen/normal_text_size" />
 
             <ImageView
@@ -189,14 +333,32 @@
                 app:srcCompat="@drawable/ic_photo_empty" />
 
             <TextView
-                android:id="@+id/nombre_9"
+                android:id="@+id/categoria_9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/imagen_producto_9"
                 android:layout_toEndOf="@id/imagen_producto_9"
                 android:layout_below="@id/imagen_producto_8"
-                android:text="@string/producto_string"
+                android:text="@string/categoria_string"
                 android:paddingTop="@dimen/padding_top_categoria"
+                android:textSize="@dimen/normal_text_size" />
+            <TextView
+                android:id="@+id/nombre_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/imagen_producto_9"
+                android:layout_toEndOf="@id/imagen_producto_9"
+                android:layout_below="@id/categoria_9"
+                android:text="@string/producto_string"
+                android:textSize="@dimen/normal_text_size" />
+            <TextView
+                android:id="@+id/descripcion_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/imagen_producto_9"
+                android:layout_toEndOf="@id/imagen_producto_9"
+                android:layout_below="@id/nombre_9"
+                android:text="@string/descripcion_string"
                 android:textSize="@dimen/normal_text_size" />
 
             <ImageView
@@ -208,15 +370,34 @@
                 app:srcCompat="@drawable/ic_photo_empty" />
 
             <TextView
-                android:id="@+id/nombre_10"
+                android:id="@+id/categoria_10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/imagen_producto_10"
                 android:layout_toEndOf="@id/imagen_producto_10"
                 android:layout_below="@id/imagen_producto_9"
-                android:text="@string/producto_string"
+                android:text="@string/categoria_string"
                 android:paddingTop="@dimen/padding_top_categoria"
                 android:textSize="@dimen/normal_text_size" />
+            <TextView
+                android:id="@+id/nombre_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/imagen_producto_10"
+                android:layout_toEndOf="@id/imagen_producto_10"
+                android:layout_below="@id/categoria_10"
+                android:text="@string/producto_string"
+                android:textSize="@dimen/normal_text_size" />
+            <TextView
+                android:id="@+id/descripcion_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/imagen_producto_10"
+                android:layout_toEndOf="@id/imagen_producto_10"
+                android:layout_below="@id/nombre_10"
+                android:text="@string/descripcion_string"
+                android:textSize="@dimen/normal_text_size" />
+
 
         </RelativeLayout>
     </ScrollView>
@@ -228,7 +409,6 @@
         android:layout_alignParentBottom="true"
         android:text="AGREGAR PRODUCTO"
         android:background="@color/colorButton"
-        android:textColor="@color/colorWhite"
-        android:onClick="AgregarProducto"/>
+        android:textColor="@color/colorWhite"/>
 
 </RelativeLayout>
