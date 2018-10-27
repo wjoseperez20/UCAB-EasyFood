@@ -70,10 +70,4 @@ public class ProductosActivity extends AppCompatActivity {
         });
     }
 
-    public void ProbandoBoton(View view){
-        Intent replyIntent = new Intent();
-        setResult(RESULT_OK, replyIntent);
-        _easyFood.CrearPostre("Torta de chocolate", R.drawable.desayuno_1);
-        finish();
-    }
 }
