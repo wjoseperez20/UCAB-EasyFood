@@ -23,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
     TextView nombreProducto1, nombreProducto2, nombreProducto3, nombreProducto4,
                 nombreProducto5, nombreProducto6, nombreProducto7, nombreProducto8,
                     nombreProducto9, nombreProducto10;
+
+    //Logica principal de la aplicación.
     EasyFood _easyFood;
 
     @Override
@@ -68,6 +70,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /*
+        Asigna la imagen y texto por defecto a los 10 productos próximos a seleccionar.
+    */
     private void InicializarProductos(){
         imagenProducto1.setImageResource(R.drawable.ic_photo_empty);
         imagenProducto2.setImageResource(R.drawable.ic_photo_empty);
@@ -93,19 +98,98 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /*
+        Asigna el proceso que se ejecutará al activar el longClick en cada imagen.
+    */
     private void SetListeners() {
-        imagenProducto1.setOnLongClickListener(new View.OnLongClickListener() {
+        imagenProducto1.setOnLongClickListener(eventoEliminarProducto);
+        imagenProducto2.setOnLongClickListener(eventoEliminarProducto);
+        imagenProducto3.setOnLongClickListener(eventoEliminarProducto);
+        imagenProducto4.setOnLongClickListener(eventoEliminarProducto);
+        imagenProducto5.setOnLongClickListener(eventoEliminarProducto);
+        imagenProducto6.setOnLongClickListener(eventoEliminarProducto);
+        imagenProducto7.setOnLongClickListener(eventoEliminarProducto);
+        imagenProducto8.setOnLongClickListener(eventoEliminarProducto);
+        imagenProducto9.setOnLongClickListener(eventoEliminarProducto);
+        imagenProducto10.setOnLongClickListener(eventoEliminarProducto);
 
-            @Override
-            public boolean onLongClick(View v) {
-
-                Toast.makeText(getApplicationContext(), "Eliminar producto", Toast.LENGTH_SHORT).show();
-                return true;
-            }
-
-        });
     }
 
+    /*
+        Según el ImageView que active el evento LongClick se elimina el producto respectivo por su índice (0 - 9)
+    */
+    View.OnLongClickListener eventoEliminarProducto = new View.OnLongClickListener() {
+        @Override
+        public boolean onLongClick(View v) {
+            switch (v.getId())
+            {
+                case R.id.imagen_producto_1:
+                    EliminarProducto(0);
+                    break;
+                case R.id.imagen_producto_2:
+                    EliminarProducto(1);
+                    break;
+                case R.id.imagen_producto_3:
+                    EliminarProducto(2);
+                    break;
+                case R.id.imagen_producto_4:
+                    EliminarProducto(3);
+                    break;
+                case R.id.imagen_producto_5:
+                    EliminarProducto(4);
+                    break;
+                case R.id.imagen_producto_6:
+                    EliminarProducto(5);
+                    break;
+                case R.id.imagen_producto_7:
+                    EliminarProducto(6);
+                    break;
+                case R.id.imagen_producto_8:
+                    EliminarProducto(7);
+                    break;
+                case R.id.imagen_producto_9:
+                    EliminarProducto(8);
+                    break;
+                case R.id.imagen_producto_10:
+                    EliminarProducto(9);
+                    break;
+            }
+            return true;
+        }
+    };
+
+
+    /*
+        Muestra el mensaje de producto eliminado mediante un Toast.
+    */
+    private void ToastProductoEliminado(){
+        Toast.makeText(getApplicationContext(), "Producto eliminado con éxito.", Toast.LENGTH_SHORT).show();
+    }
+
+    /*
+        Muestra el mensaje de error al eliminar un producto mediante un Toast.
+    */
+    private void ToastErrorEliminar(){
+        Toast.makeText(getApplicationContext(), "Espacio disponible para agregar un producto.", Toast.LENGTH_SHORT).show();
+    }
+
+    /*
+        Método para eliminar el producto de la lista de productos por su índice y reasignar los productos restantes nuevamente.
+    */
+    private void EliminarProducto(int indice){
+
+        if(_easyFood.EliminarProducto(indice)){
+            InicializarProductos();
+            AsignarProductos();
+            ToastProductoEliminado();
+        }
+        else
+            ToastErrorEliminar();
+    }
+
+    /*
+        Si la cantidad de productos no excede el límite, inicia el segundo activity para seleccionar el producto a ser agregado.
+    */
     public void AgregarProducto(View view) {
 
         if(_easyFood.ValidarAgregarProducto())
@@ -118,6 +202,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    /*
+        Una vez seleccionado el producto en la segunda activity, lo asigna a la lista de productos seleccionados.
+    */
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
@@ -136,6 +223,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /*
+        Dependiendo del indice del producto en la lista de productos seleccionados, lo asigna a la imagen y texto respectivo.
+    */
     private void AsignarProductos(){
         for(int i = 0; i < _easyFood.GetListaProductos().size(); i++) {
             Producto producto = _easyFood.GetProducto(i);
