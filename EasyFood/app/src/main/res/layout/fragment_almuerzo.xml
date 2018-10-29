@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductosActivity">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tab_almuerzo"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/texto_almuerzos" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollView_almuerzos"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/texto_almuerzos">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/imagen_almuerzo_1"
+                android:layout_width="@dimen/image_width"
+                android:layout_height="@dimen/image_height"
+                android:layout_alignParentTop="true"
+                android:padding="@dimen/padding_regular"
+                app:srcCompat="@drawable/carnealaparrillaservidaconpapasfritas"
+                android:onClick="AgregarAlmuerzo" />
+
+            <TextView
+                android:id="@+id/producto_almuerzo_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/imagen_almuerzo_1"
+                android:layout_toRightOf="@id/imagen_almuerzo_1"
+                android:paddingTop="@dimen/padding_top_categoria"
+                android:text="@string/label_producto"
+                android:textSize="@dimen/normal_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/almuerzo_carne_parrilla"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/producto_almuerzo_1"
+                android:layout_toRightOf="@id/producto_almuerzo_1"
+                android:paddingTop="@dimen/padding_top_categoria"
+                android:text="@string/almuerzo_1_nombre"
+                android:textSize="@dimen/normal_text_size" />
+
+            <ImageView
+                android:id="@+id/imagen_almuerzo_2"
+                android:layout_width="@dimen/image_width"
+                android:layout_height="@dimen/image_height"
+                android:layout_below="@id/imagen_almuerzo_1"
+                android:padding="@dimen/padding_regular"
+                app:srcCompat="@drawable/carnetiernayalinoapunto"
+                android:onClick="AgregarAlmuerzo" />
+
+            <TextView
+                android:id="@+id/producto_almuerzo_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imagen_almuerzo_1"
+                android:layout_toEndOf="@id/imagen_almuerzo_2"
+                android:layout_toRightOf="@id/imagen_almuerzo_2"
+                android:paddingTop="@dimen/padding_top_categoria"
+                android:text="@string/label_producto"
+                android:textSize="@dimen/normal_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/almuerzo_carne_tierna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imagen_almuerzo_1"
+                android:layout_toEndOf="@id/producto_almuerzo_2"
+                android:layout_toRightOf="@id/producto_almuerzo_2"
+                android:paddingTop="@dimen/padding_top_categoria"
+                android:text="@string/almuerzo_2_nombre"
+                android:textSize="@dimen/normal_text_size" />
+
+            <ImageView
+                android:id="@+id/imagen_almuerzo_3"
+                android:layout_width="@dimen/image_width"
+                android:layout_height="@dimen/image_height"
+                android:layout_below="@id/imagen_almuerzo_2"
+                android:padding="@dimen/padding_regular"
+                app:srcCompat="@drawable/carpachiodecarne"
+                android:onClick="AgregarAlmuerzo" />
+
+            <TextView
+                android:id="@+id/producto_almuerzo_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imagen_almuerzo_2"
+                android:layout_toEndOf="@id/imagen_almuerzo_3"
+                android:layout_toRightOf="@id/imagen_almuerzo_3"
+                android:paddingTop="@dimen/padding_top_categoria"
+                android:text="@string/label_producto"
+                android:textSize="@dimen/normal_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/almuerzo_carpachio_carne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imagen_almuerzo_2"
+                android:layout_toEndOf="@id/producto_almuerzo_3"
+                android:layout_toRightOf="@id/producto_almuerzo_3"
+                android:paddingTop="@dimen/padding_top_categoria"
+                android:text="@string/almuerzo_3_nombre"
+                android:textSize="@dimen/normal_text_size" />
+
+
+            <ImageView
+                android:id="@+id/imagen_almuerzo_4"
+                android:layout_width="@dimen/image_width"
+                android:layout_height="@dimen/image_height"
+                android:layout_below="@id/imagen_almuerzo_3"
+                android:padding="@dimen/padding_regular"
+                app:srcCompat="@drawable/cevicheperuano"
+                android:onClick="AgregarAlmuerzo" />
+
+            <TextView
+                android:id="@+id/producto_almuerzo_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imagen_almuerzo_3"
+                android:layout_toEndOf="@id/imagen_almuerzo_4"
+                android:layout_toRightOf="@id/imagen_almuerzo_4"
+                android:paddingTop="@dimen/padding_top_categoria"
+                android:text="@string/label_producto"
+                android:textSize="@dimen/normal_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/almuerzo_ceviche"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imagen_almuerzo_3"
+                android:layout_toEndOf="@id/producto_almuerzo_4"
+                android:layout_toRightOf="@id/producto_almuerzo_4"
+                android:paddingTop="@dimen/padding_top_categoria"
+                android:text="@string/almuerzo_4_nombre"
+                android:textSize="@dimen/normal_text_size" />
+
+            <ImageView
+                android:id="@+id/imagen_almuerzo_5"
+                android:layout_width="@dimen/image_width"
+                android:layout_height="@dimen/image_height"
+                android:layout_below="@id/imagen_almuerzo_4"
+                android:padding="@dimen/padding_regular"
+                app:srcCompat="@drawable/chuletonahumadocasero"
+                android:onClick="AgregarAlmuerzo" />
+
+            <TextView
+                android:id="@+id/producto_almuerzo_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imagen_almuerzo_4"
+                android:layout_toEndOf="@id/imagen_almuerzo_5"
+                android:layout_toRightOf="@id/imagen_almuerzo_5"
+                android:paddingTop="@dimen/padding_top_categoria"
+                android:text="@string/label_producto"
+                android:textSize="@dimen/normal_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/almuerzo_chuleton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imagen_almuerzo_4"
+                android:layout_toEndOf="@id/producto_almuerzo_5"
+                android:layout_toRightOf="@id/producto_almuerzo_5"
+                android:paddingTop="@dimen/padding_top_categoria"
+                android:text="@string/almuerzo_5_nombre"
+                android:textSize="@dimen/normal_text_size" />
+
+            <ImageView
+                android:id="@+id/imagen_almuerzo_6"
+                android:layout_width="@dimen/image_width"
+                android:layout_height="@dimen/image_height"
+                android:layout_below="@id/imagen_almuerzo_5"
+                android:padding="@dimen/padding_regular"
+                app:srcCompat="@drawable/faisanalawalkirya"
+                android:onClick="AgregarAlmuerzo" />
+
+            <TextView
+                android:id="@+id/producto_almuerzo_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imagen_almuerzo_5"
+                android:layout_toEndOf="@id/imagen_almuerzo_6"
+                android:layout_toRightOf="@id/imagen_almuerzo_6"
+                android:paddingTop="@dimen/padding_top_categoria"
+                android:text="@string/label_producto"
+                android:textSize="@dimen/normal_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/almuerzo_faisan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imagen_almuerzo_5"
+                android:layout_toEndOf="@id/producto_almuerzo_6"
+                android:layout_toRightOf="@id/producto_almuerzo_6"
+                android:paddingTop="@dimen/padding_top_categoria"
+                android:text="@string/almuerzo_6_nombre"
+                android:textSize="@dimen/normal_text_size" />
+
+            <ImageView
+                android:id="@+id/imagen_almuerzo_7"
+                android:layout_width="@dimen/image_width"
+                android:layout_height="@dimen/image_height"
+                android:layout_below="@id/imagen_almuerzo_6"
+                android:padding="@dimen/padding_regular"
+                app:srcCompat="@drawable/gambastigreaalaparrilla"
+                android:onClick="AgregarAlmuerzo" />
+
+            <TextView
+                android:id="@+id/producto_almuerzo_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imagen_almuerzo_6"
+                android:layout_toEndOf="@id/imagen_almuerzo_7"
+                android:layout_toRightOf="@id/imagen_almuerzo_7"
+                android:paddingTop="@dimen/padding_top_categoria"
+                android:text="@string/label_producto"
+                android:textSize="@dimen/normal_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/almuerzo_gambas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imagen_almuerzo_6"
+                android:layout_toEndOf="@id/producto_almuerzo_7"
+                android:layout_toRightOf="@id/producto_almuerzo_7"
+                android:paddingTop="@dimen/padding_top_categoria"
+                android:text="@string/almuerzo_7_nombre"
+                android:textSize="@dimen/normal_text_size" />
+
+            <ImageView
+                android:id="@+id/imagen_almuerzo_8"
+                android:layout_width="@dimen/image_width"
+                android:layout_height="@dimen/image_height"
+                android:layout_below="@id/imagen_almuerzo_7"
+                android:padding="@dimen/padding_regular"
+                app:srcCompat="@drawable/nusryhamburguesa"
+                android:onClick="AgregarAlmuerzo" />
+
+            <TextView
+                android:id="@+id/producto_almuerzo_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imagen_almuerzo_7"
+                android:layout_toEndOf="@id/imagen_almuerzo_8"
+                android:layout_toRightOf="@id/imagen_almuerzo_8"
+                android:paddingTop="@dimen/padding_top_categoria"
+                android:text="@string/label_producto"
+                android:textSize="@dimen/normal_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/almuerzo_hamburguesa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imagen_almuerzo_7"
+                android:layout_toEndOf="@id/producto_almuerzo_8"
+                android:layout_toRightOf="@id/producto_almuerzo_8"
+                android:paddingTop="@dimen/padding_top_categoria"
+                android:text="@string/almuerzo_8_nombre"
+                android:textSize="@dimen/normal_text_size" />
+
+            <ImageView
+                android:id="@+id/imagen_almuerzo_9"
+                android:layout_width="@dimen/image_width"
+                android:layout_height="@dimen/image_height"
+                android:layout_below="@id/imagen_almuerzo_8"
+                android:padding="@dimen/padding_regular"
+                app:srcCompat="@drawable/pescadodeldia"
+                android:onClick="AgregarAlmuerzo" />
+
+            <TextView
+                android:id="@+id/producto_almuerzo_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imagen_almuerzo_8"
+                android:layout_toEndOf="@id/imagen_almuerzo_9"
+                android:layout_toRightOf="@id/imagen_almuerzo_9"
+                android:paddingTop="@dimen/padding_top_categoria"
+                android:text="@string/label_producto"
+                android:textSize="@dimen/normal_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/almuerzo_pescado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imagen_almuerzo_8"
+                android:layout_toEndOf="@id/producto_almuerzo_9"
+                android:layout_toRightOf="@id/producto_almuerzo_9"
+                android:paddingTop="@dimen/padding_top_categoria"
+                android:text="@string/almuerzo_9_nombre"
+                android:textSize="@dimen/normal_text_size" />
+
+            <ImageView
+                android:id="@+id/imagen_almuerzo_10"
+                android:layout_width="@dimen/image_width"
+                android:layout_height="@dimen/image_height"
+                android:layout_below="@id/imagen_almuerzo_9"
+                android:padding="@dimen/padding_regular"
+                app:srcCompat="@drawable/tomahawk"
+                android:onClick="AgregarAlmuerzo" />
+
+            <TextView
+                android:id="@+id/producto_almuerzo_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imagen_almuerzo_9"
+                android:layout_toEndOf="@id/imagen_almuerzo_10"
+                android:layout_toRightOf="@id/imagen_almuerzo_10"
+                android:paddingTop="@dimen/padding_top_categoria"
+                android:text="@string/label_producto"
+                android:textSize="@dimen/normal_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/almuerzo_tomahawk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imagen_almuerzo_9"
+                android:layout_toEndOf="@id/producto_almuerzo_10"
+                android:layout_toRightOf="@id/producto_almuerzo_10"
+                android:paddingTop="@dimen/padding_top_categoria"
+                android:text="@string/almuerzo_10_nombre"
+                android:textSize="@dimen/normal_text_size" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

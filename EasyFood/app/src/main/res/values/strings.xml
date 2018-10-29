@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">EasyFood</string>
+    <string name="texto_inicio">PRODUCTOS SELECCIONADOS</string>
+    <string name="theme_title">EasyFood</string>
+    <string name="productos_title">Productos Disponibles</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tab_desayuno">Lista de Desayunos</string>
+    <string name="tab_almuerzo">Lista de Almuerzos</string>
+    <string name="tab_postre">Lista de Postres</string>
+    <string name="tab_label1">Desayunos</string>
+    <string name="tab_label2">Almuerzos</string>
+    <string name="tab_label3">Postres</string>
+    <string name="label_producto">Producto:&#032;</string>
+    <string name="desayuno_1_nombre">Huevos Americanos</string>
+    <string name="desayuno_2_nombre">Avena con Frutos Rojos</string>
+    <string name="desayuno_3_nombre">Croissant Francés</string>
+    <string name="desayuno_4_nombre">Croque Madame</string>
+    <string name="desayuno_5_nombre">Croque Madame Con Camote</string>
+    <string name="desayuno_6_nombre">Huevos Benedictinos</string>
+    <string name="desayuno_7_nombre">Huevos En Cazuela</string>
+    <string name="desayuno_8_nombre">Matcha Con Arándano</string>
+    <string name="desayuno_9_nombre">Pan Francés</string>
+    <string name="desayuno_10_nombre">Wafles con Manzana</string>
+    <string name="postre_1_nombre">Brownie</string>
+    <string name="postre_2_nombre">Bunuelo</string>
+    <string name="postre_3_nombre">Cheesecake</string>
+    <string name="postre_4_nombre">Cpulant</string>
+    <string name="postre_5_nombre">Helado</string>
+    <string name="postre_6_nombre">Pistacho</string>
+    <string name="postre_7_nombre">Tiramisu</string>
+    <string name="postre_8_nombre">Torta de Hojaldre</string>
+    <string name="postre_9_nombre">Torta de Zanahoria</string>
+    <string name="postre_10_nombre">Turca</string>
+    <string name="almuerzo_1_nombre">Carne a la Parrilla</string>
+    <string name="almuerzo_2_nombre">Carne Tierna y Alino Apunto</string>
+    <string name="almuerzo_3_nombre">Carpachio de Carne</string>
+    <string name="almuerzo_4_nombre">Ceviche Peruano</string>
+    <string name="almuerzo_5_nombre">Chuleton Ahumado Casero</string>
+    <string name="almuerzo_6_nombre">Faisan a la Walkirya</string>
+    <string name="almuerzo_7_nombre">Gambas Tigre a la Parrilla</string>
+    <string name="almuerzo_8_nombre">Nusr-y Hamburguesa</string>
+    <string name="almuerzo_9_nombre">Pescado del Dia</string>
+    <string name="almuerzo_10_nombre">Tomahawk</string>
+    <string name="producto_seleccione">Seleccione un producto</string>
+
+</resources>

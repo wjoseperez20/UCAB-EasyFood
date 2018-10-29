@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_regular">5dp</dimen>
+    <dimen name="image_width">100dp</dimen>
+    <dimen name="image_height">100dp</dimen>
+    <dimen name="tittle_size">20sp</dimen>
+    <dimen name="normal_text_size">15sp</dimen>
+    <dimen name="padding_top_categoria">34dp</dimen>
+</resources>
