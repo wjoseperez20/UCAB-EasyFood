@@ -17,12 +17,12 @@ import com.easyfood.easyfood.Modelo.Producto;
 public class MainActivity extends AppCompatActivity {
 
     ImageView imagenProducto1, imagenProducto2, imagenProducto3, imagenProducto4,
-                imagenProducto5, imagenProducto6, imagenProducto7, imagenProducto8,
-                    imagenProducto9, imagenProducto10;
+            imagenProducto5, imagenProducto6, imagenProducto7, imagenProducto8,
+            imagenProducto9, imagenProducto10;
 
     TextView nombreProducto1, nombreProducto2, nombreProducto3, nombreProducto4,
-                nombreProducto5, nombreProducto6, nombreProducto7, nombreProducto8,
-                    nombreProducto9, nombreProducto10;
+            nombreProducto5, nombreProducto6, nombreProducto7, nombreProducto8,
+            nombreProducto9, nombreProducto10;
 
     //Logica principal de la aplicación.
     EasyFood _easyFood;
@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
     /*
         Asigna la imagen y texto por defecto a los 10 productos próximos a seleccionar.
     */
-    private void InicializarProductos(){
+    private void InicializarProductos() {
         imagenProducto1.setImageResource(R.drawable.ic_photo_empty);
         imagenProducto2.setImageResource(R.drawable.ic_photo_empty);
         imagenProducto3.setImageResource(R.drawable.ic_photo_empty);
@@ -121,8 +121,7 @@ public class MainActivity extends AppCompatActivity {
     View.OnLongClickListener eventoEliminarProducto = new View.OnLongClickListener() {
         @Override
         public boolean onLongClick(View v) {
-            switch (v.getId())
-            {
+            switch (v.getId()) {
                 case R.id.imagen_producto_1:
                     EliminarProducto(0);
                     break;
@@ -162,28 +161,27 @@ public class MainActivity extends AppCompatActivity {
     /*
         Muestra el mensaje de producto eliminado mediante un Toast.
     */
-    private void ToastProductoEliminado(){
+    private void ToastProductoEliminado() {
         Toast.makeText(getApplicationContext(), "Producto eliminado con éxito.", Toast.LENGTH_SHORT).show();
     }
 
     /*
         Muestra el mensaje de error al eliminar un producto mediante un Toast.
     */
-    private void ToastErrorEliminar(){
+    private void ToastErrorEliminar() {
         Toast.makeText(getApplicationContext(), "Espacio disponible para agregar un producto.", Toast.LENGTH_SHORT).show();
     }
 
     /*
         Método para eliminar el producto de la lista de productos por su índice y reasignar los productos restantes nuevamente.
     */
-    private void EliminarProducto(int indice){
+    private void EliminarProducto(int indice) {
 
-        if(_easyFood.EliminarProducto(indice)){
+        if (_easyFood.EliminarProducto(indice)) {
             InicializarProductos();
             AsignarProductos();
             ToastProductoEliminado();
-        }
-        else
+        } else
             ToastErrorEliminar();
     }
 
@@ -192,12 +190,10 @@ public class MainActivity extends AppCompatActivity {
     */
     public void AgregarProducto(View view) {
 
-        if(_easyFood.ValidarAgregarProducto())
-        {
+        if (_easyFood.ValidarAgregarProducto()) {
             Intent intent = new Intent(this, ProductosActivity.class);
             startActivityForResult(intent, 1);
-        }
-        else
+        } else
             Toast.makeText(getApplicationContext(), "Capacidad máxima de productos alcanzada.", Toast.LENGTH_SHORT).show();
     }
 
@@ -211,11 +207,10 @@ public class MainActivity extends AppCompatActivity {
         if (requestCode == 1) {
 
             if (resultCode == RESULT_OK) {
-                if (_easyFood.GetListaProductos().size() > 0){
+                if (_easyFood.GetListaProductos().size() > 0) {
                     AsignarProductos();
                     Toast.makeText(getApplicationContext(), "Producto agregado exitosamente.", Toast.LENGTH_SHORT).show();
-                }
-                else
+                } else
                     Toast.makeText(getApplicationContext(), "No se selecciono un producto.", Toast.LENGTH_SHORT).show();
             }
 
@@ -226,8 +221,8 @@ public class MainActivity extends AppCompatActivity {
     /*
         Dependiendo del indice del producto en la lista de productos seleccionados, lo asigna a la imagen y texto respectivo.
     */
-    private void AsignarProductos(){
-        for(int i = 0; i < _easyFood.GetListaProductos().size(); i++) {
+    private void AsignarProductos() {
+        for (int i = 0; i < _easyFood.GetListaProductos().size(); i++) {
             Producto producto = _easyFood.GetProducto(i);
             switch (i) {
                 case 0:
@@ -260,13 +255,13 @@ public class MainActivity extends AppCompatActivity {
                 case 9:
                     SetProducto(imagenProducto10, nombreProducto10, producto.GetImagen(), producto.GetNombre());
                     break;
-                 default:
-                     Log.d("ERROR", "Capacidad máxima de productos");
+                default:
+                    Log.d("ERROR", "Capacidad máxima de productos");
             }
         }
     }
 
-    private void SetProducto(ImageView Image, TextView Text, int ImagenProducto, String NombreProducto){
+    private void SetProducto(ImageView Image, TextView Text, int ImagenProducto, String NombreProducto) {
         Image.setImageResource(ImagenProducto);
         Text.setText(NombreProducto);
     }

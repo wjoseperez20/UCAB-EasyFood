@@ -14,7 +14,7 @@
         android:text="@string/tab_postre"
         android:textAlignment="center"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:id="@+id/texto_postre"/>
+        android:id="@+id/texto_postre" />
 
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/scrollView_desayunos"
@@ -34,7 +34,7 @@
                 android:layout_height="@dimen/image_height"
                 android:layout_alignParentTop="true"
                 android:padding="@dimen/padding_regular"
-                android:onClick="AgregarPostre"/>
+                android:onClick="AgregarPostre" />
 
             <TextView
                 android:id="@+id/producto_postre_1"
@@ -64,7 +64,7 @@
                 android:layout_height="@dimen/image_height"
                 android:layout_below="@id/imagen_postre_1"
                 android:padding="@dimen/padding_regular"
-                android:onClick="AgregarPostre"/>
+                android:onClick="AgregarPostre" />
 
             <TextView
                 android:id="@+id/producto_postre_2"
@@ -96,7 +96,7 @@
                 android:layout_height="@dimen/image_height"
                 android:layout_below="@id/imagen_postre_2"
                 android:padding="@dimen/padding_regular"
-                android:onClick="AgregarPostre"/>
+                android:onClick="AgregarPostre" />
 
             <TextView
                 android:id="@+id/producto_postre_3"
@@ -129,7 +129,7 @@
                 android:layout_height="@dimen/image_height"
                 android:layout_below="@id/imagen_postre_3"
                 android:padding="@dimen/padding_regular"
-                android:onClick="AgregarPostre"/>
+                android:onClick="AgregarPostre" />
 
             <TextView
                 android:id="@+id/producto_postre_4"
@@ -161,7 +161,7 @@
                 android:layout_height="@dimen/image_height"
                 android:layout_below="@id/imagen_postre_4"
                 android:padding="@dimen/padding_regular"
-                android:onClick="AgregarPostre"/>
+                android:onClick="AgregarPostre" />
 
             <TextView
                 android:id="@+id/producto_postre_5"
@@ -193,7 +193,7 @@
                 android:layout_height="@dimen/image_height"
                 android:layout_below="@id/imagen_postre_5"
                 android:padding="@dimen/padding_regular"
-                android:onClick="AgregarPostre"/>
+                android:onClick="AgregarPostre" />
 
             <TextView
                 android:id="@+id/producto_postre_6"

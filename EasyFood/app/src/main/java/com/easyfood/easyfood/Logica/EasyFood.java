@@ -35,42 +35,39 @@ public class EasyFood {
     /*
         Obtiene la instancia del objeto Producto según el índice de posición en la lista de productos seleccionados.
     */
-    public Producto GetProducto(int posicion){
+    public Producto GetProducto(int posicion) {
         Producto retorno = null;
 
-        try
-        {
+        try {
             retorno = this._productosSeleccionados.get(posicion);
-        }
-        catch (Exception e)
-        {
+        } catch (Exception e) {
             Log.d("OBTENER PRODUCTO", e.getMessage());
         }
 
-        return  retorno;
+        return retorno;
 
     }
 
     /*
         Valida si es posible agregar un nuevo producto, capacidad máxima de 10 productos.
     */
-    public Boolean ValidarAgregarProducto(){
+    public Boolean ValidarAgregarProducto() {
         Boolean valido = true;
 
-        if(_productosSeleccionados.size() > 9)
+        if (_productosSeleccionados.size() > 9)
             valido = false;
 
-        return  valido;
+        return valido;
     }
 
     /*
         Si el índice tiene un valor válido entre 0 y la cantidad de elementos en la lista,
             elimina la instancia del objeto Producto en el índice respectivo.
     */
-    public Boolean EliminarProducto(int indice){
+    public Boolean EliminarProducto(int indice) {
         Boolean retorno = false;
 
-        if(indice >= 0 && indice < _productosSeleccionados.size()){
+        if (indice >= 0 && indice < _productosSeleccionados.size()) {
             _productosSeleccionados.remove(indice);
             retorno = true;
         }

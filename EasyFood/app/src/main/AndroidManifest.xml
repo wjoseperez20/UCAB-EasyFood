@@ -19,7 +19,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ProductosActivity"
+        <activity
+            android:name=".ProductosActivity"
             android:label="@string/productos_title"
             android:parentActivityName=".MainActivity">
             <meta-data
