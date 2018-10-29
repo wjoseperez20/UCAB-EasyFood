@@ -74,27 +74,27 @@ public class MainActivity extends AppCompatActivity {
         Asigna la imagen y texto por defecto a los 10 productos próximos a seleccionar.
     */
     private void InicializarProductos() {
-        imagenProducto1.setImageResource(R.drawable.ic_photo_empty);
-        imagenProducto2.setImageResource(R.drawable.ic_photo_empty);
-        imagenProducto3.setImageResource(R.drawable.ic_photo_empty);
-        imagenProducto4.setImageResource(R.drawable.ic_photo_empty);
-        imagenProducto5.setImageResource(R.drawable.ic_photo_empty);
-        imagenProducto6.setImageResource(R.drawable.ic_photo_empty);
-        imagenProducto7.setImageResource(R.drawable.ic_photo_empty);
-        imagenProducto8.setImageResource(R.drawable.ic_photo_empty);
-        imagenProducto9.setImageResource(R.drawable.ic_photo_empty);
-        imagenProducto10.setImageResource(R.drawable.ic_photo_empty);
+        imagenProducto1.setVisibility(View.INVISIBLE);
+        imagenProducto2.setVisibility(View.INVISIBLE);
+        imagenProducto3.setVisibility(View.INVISIBLE);
+        imagenProducto4.setVisibility(View.INVISIBLE);
+        imagenProducto5.setVisibility(View.INVISIBLE);
+        imagenProducto6.setVisibility(View.INVISIBLE);
+        imagenProducto7.setVisibility(View.INVISIBLE);
+        imagenProducto8.setVisibility(View.INVISIBLE);
+        imagenProducto9.setVisibility(View.INVISIBLE);
+        imagenProducto10.setVisibility(View.INVISIBLE);
 
-        nombreProducto1.setText(getResources().getString(R.string.producto_seleccione));
-        nombreProducto2.setText(getResources().getString(R.string.producto_seleccione));
-        nombreProducto3.setText(getResources().getString(R.string.producto_seleccione));
-        nombreProducto4.setText(getResources().getString(R.string.producto_seleccione));
-        nombreProducto5.setText(getResources().getString(R.string.producto_seleccione));
-        nombreProducto6.setText(getResources().getString(R.string.producto_seleccione));
-        nombreProducto7.setText(getResources().getString(R.string.producto_seleccione));
-        nombreProducto8.setText(getResources().getString(R.string.producto_seleccione));
-        nombreProducto9.setText(getResources().getString(R.string.producto_seleccione));
-        nombreProducto10.setText(getResources().getString(R.string.producto_seleccione));
+        nombreProducto1.setText(null);
+        nombreProducto2.setText(null);
+        nombreProducto3.setText(null);
+        nombreProducto4.setText(null);
+        nombreProducto5.setText(null);
+        nombreProducto6.setText(null);
+        nombreProducto7.setText(null);
+        nombreProducto8.setText(null);
+        nombreProducto9.setText(null);
+        nombreProducto10.setText(null);
 
     }
 
@@ -263,6 +263,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void SetProducto(ImageView Image, TextView Text, int ImagenProducto, String NombreProducto) {
         Image.setImageResource(ImagenProducto);
+        Image.setVisibility(View.VISIBLE);
         Text.setText(NombreProducto);
     }
 }
