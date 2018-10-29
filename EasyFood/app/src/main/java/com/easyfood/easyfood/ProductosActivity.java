@@ -2,15 +2,12 @@ package com.easyfood.easyfood;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
-import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.easyfood.easyfood.Aplicacion.EasyFoodApp;
 import com.easyfood.easyfood.Aplicacion.PagerAdapter;
@@ -78,9 +75,9 @@ public class ProductosActivity extends AppCompatActivity {
         Este metodo se inicia al darle click a una imagen de la lista de desayunos.
         Crea el producto según la imagen seleccionada y vuelve al activity inicial, agregando el desayuno seleccionado.
     */
-    public void AgregarDesayuno(View view){
+    public void AgregarDesayuno(View view) {
 
-        switch (view.getId()){
+        switch (view.getId()) {
             case R.id.imagen_desayuno_1:
                 SeleccionarProducto(R.drawable.desayuno_1, GetStringResource(R.string.desayuno_1_nombre));
                 break;
@@ -120,9 +117,9 @@ public class ProductosActivity extends AppCompatActivity {
         Este metodo se inicia al darle click a una imagen de la lista de almuerzos.
         Crea el producto según la imagen seleccionada y vuelve al activity inicial, agregando el almuerzo seleccionado.
     */
-    public void AgregarAlmuerzo(View view){
+    public void AgregarAlmuerzo(View view) {
 
-        switch (view.getId()){
+        switch (view.getId()) {
             case R.id.imagen_almuerzo_1:
                 SeleccionarProducto(R.drawable.carnealaparrillaservidaconpapasfritas,
                         GetStringResource(R.string.almuerzo_1_nombre));
@@ -163,9 +160,9 @@ public class ProductosActivity extends AppCompatActivity {
         Este metodo se inicia al darle click a una imagen de la lista de postres.
         Crea el producto según la imagen seleccionada y vuelve al activity inicial, agregando el postre seleccionado.
     */
-    public void AgregarPostre(View view){
+    public void AgregarPostre(View view) {
 
-        switch (view.getId()){
+        switch (view.getId()) {
             case R.id.imagen_postre_1:
                 SeleccionarProducto(R.drawable.brownie, GetStringResource(R.string.postre_1_nombre));
                 break;
@@ -205,7 +202,7 @@ public class ProductosActivity extends AppCompatActivity {
     /*
         Obtener el valor del String por el identificador del recurso.
     */
-    private String GetStringResource(int identificador){
+    private String GetStringResource(int identificador) {
         return getResources().getString(identificador);
     }
 
@@ -220,7 +217,7 @@ public class ProductosActivity extends AppCompatActivity {
     /*
         Retorna a la activity inicial con un codigo de exito. (1)
     */
-    private void TerminarActivity(){
+    private void TerminarActivity() {
         Intent replyIntent = new Intent();
         setResult(RESULT_OK, replyIntent);
         finish();

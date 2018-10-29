@@ -13,7 +13,7 @@
         android:text="@string/tab_almuerzo"
         android:textAlignment="center"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:id="@+id/texto_almuerzos"/>
+        android:id="@+id/texto_almuerzos" />
 
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/scrollView_almuerzos"
@@ -33,7 +33,7 @@
                 android:layout_alignParentTop="true"
                 android:padding="@dimen/padding_regular"
                 app:srcCompat="@drawable/carnealaparrillaservidaconpapasfritas"
-                android:onClick="AgregarAlmuerzo"/>
+                android:onClick="AgregarAlmuerzo" />
 
             <TextView
                 android:id="@+id/producto_almuerzo_1"
@@ -63,7 +63,7 @@
                 android:layout_below="@id/imagen_almuerzo_1"
                 android:padding="@dimen/padding_regular"
                 app:srcCompat="@drawable/carnetiernayalinoapunto"
-                android:onClick="AgregarAlmuerzo"/>
+                android:onClick="AgregarAlmuerzo" />
 
             <TextView
                 android:id="@+id/producto_almuerzo_2"
@@ -95,7 +95,7 @@
                 android:layout_below="@id/imagen_almuerzo_2"
                 android:padding="@dimen/padding_regular"
                 app:srcCompat="@drawable/carpachiodecarne"
-                android:onClick="AgregarAlmuerzo"/>
+                android:onClick="AgregarAlmuerzo" />
 
             <TextView
                 android:id="@+id/producto_almuerzo_3"
@@ -128,7 +128,7 @@
                 android:layout_below="@id/imagen_almuerzo_3"
                 android:padding="@dimen/padding_regular"
                 app:srcCompat="@drawable/cevicheperuano"
-                android:onClick="AgregarAlmuerzo"/>
+                android:onClick="AgregarAlmuerzo" />
 
             <TextView
                 android:id="@+id/producto_almuerzo_4"
@@ -160,7 +160,7 @@
                 android:layout_below="@id/imagen_almuerzo_4"
                 android:padding="@dimen/padding_regular"
                 app:srcCompat="@drawable/chuletonahumadocasero"
-                android:onClick="AgregarAlmuerzo"/>
+                android:onClick="AgregarAlmuerzo" />
 
             <TextView
                 android:id="@+id/producto_almuerzo_5"
@@ -192,7 +192,7 @@
                 android:layout_below="@id/imagen_almuerzo_5"
                 android:padding="@dimen/padding_regular"
                 app:srcCompat="@drawable/faisanalawalkirya"
-                android:onClick="AgregarAlmuerzo"/>
+                android:onClick="AgregarAlmuerzo" />
 
             <TextView
                 android:id="@+id/producto_almuerzo_6"
@@ -224,7 +224,7 @@
                 android:layout_below="@id/imagen_almuerzo_6"
                 android:padding="@dimen/padding_regular"
                 app:srcCompat="@drawable/gambastigreaalaparrilla"
-                android:onClick="AgregarAlmuerzo"/>
+                android:onClick="AgregarAlmuerzo" />
 
             <TextView
                 android:id="@+id/producto_almuerzo_7"
@@ -256,7 +256,7 @@
                 android:layout_below="@id/imagen_almuerzo_7"
                 android:padding="@dimen/padding_regular"
                 app:srcCompat="@drawable/nusryhamburguesa"
-                android:onClick="AgregarAlmuerzo"/>
+                android:onClick="AgregarAlmuerzo" />
 
             <TextView
                 android:id="@+id/producto_almuerzo_8"
@@ -288,7 +288,7 @@
                 android:layout_below="@id/imagen_almuerzo_8"
                 android:padding="@dimen/padding_regular"
                 app:srcCompat="@drawable/pescadodeldia"
-                android:onClick="AgregarAlmuerzo"/>
+                android:onClick="AgregarAlmuerzo" />
 
             <TextView
                 android:id="@+id/producto_almuerzo_9"
@@ -320,7 +320,7 @@
                 android:layout_below="@id/imagen_almuerzo_9"
                 android:padding="@dimen/padding_regular"
                 app:srcCompat="@drawable/tomahawk"
-                android:onClick="AgregarAlmuerzo"/>
+                android:onClick="AgregarAlmuerzo" />
 
             <TextView
                 android:id="@+id/producto_almuerzo_10"
